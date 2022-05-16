@@ -16,6 +16,9 @@ code {
   background-color: pink;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px
 }
 
 .header-list {
@@ -23,18 +26,39 @@ code {
   flex-direction: row;
   list-style-type: none;
   align-items: center;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   margin: 20px;
+
 }
 
 .home {
   display: flex;
-
+  height: auto;
 }
 
 .footer {
+  display: flex;
   background-color: plum;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
 }
