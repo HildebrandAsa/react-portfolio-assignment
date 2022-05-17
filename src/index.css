@@ -60,6 +60,30 @@ a {
   margin: 30px;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input, .input-message, .input-button {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.input-message {
+  height: 100px;
+}
+
+
+
 .footer {
   display: flex;
   background-color: plum;

@@ -7,17 +7,15 @@ const [message, setMessage] = useState("")
 
  const submitHandler = (e) => {
    e.preventDefault()
-   `Your message has been sent!</h3>
-   <p>Name: ${name}</p>
-   <p>Email: ${email}</p>
-   <p>Message: ${message}</p>`
-
  }
   return (
     <>
-    <form onSubmit={submitHandler}>
+    <div className="contact-container">
+      <h2>Send a message to contact me:</h2>
+    <form onSubmit={submitHandler} className="contact-form">
       <label htmlFor="name">Name:</label>
       <input
+        className="input"
         type="text"
         name="name"
         value={name}
@@ -25,6 +23,7 @@ const [message, setMessage] = useState("")
       />
       <label htmlFor="email">Email:</label>
       <input
+        className="input"
         type="text"
         name="email"
         value={email}
@@ -32,13 +31,17 @@ const [message, setMessage] = useState("")
       />
       <label htmlFor="message">Message:</label>
       <input
+        className="input-message"
         type="text"
         name="message"
+        cols="31"
+        rows="9"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <input type="submit" value="Submit" />
+      <button className="input-button" type="submit" value="Submit">Submit</button>
     </form>
+    </div>
 
   </>
   );
