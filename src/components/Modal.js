@@ -1,7 +1,11 @@
 const Modal = () => {
 
+  
   return (
-    <div></div>
+    <div>
+
+      <p>This is the modal message</p>
+    </div>
   );
 };
 
