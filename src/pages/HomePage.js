@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+
 import ImageDisplay from "../components/ImageDisplay";
 
+
 const HomePage = () => {
+
 
   return (
     <>
