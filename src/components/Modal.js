@@ -1,12 +1,13 @@
 import { useState } from "react"
 
-const Modal = () => {
+const Modal = ({open, children}) => {
 
-  const [modal, setModal] = useState()
+  const [openModal, setOpenModal] = useState(false)
+
   
   return (
     <div>
-      <button>Book a meeting</button>
+      <button onClick={open}>{children}</button>
     </div>
   );
 };
