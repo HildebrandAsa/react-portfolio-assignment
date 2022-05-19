@@ -1,9 +1,12 @@
+import { useState } from "react"
+
 const Modal = () => {
 
+  const [modal, setModal] = useState()
   
   return (
     <div>
-      <p>This is the modal message</p>
+      <button>Book a meeting</button>
     </div>
   );
 };

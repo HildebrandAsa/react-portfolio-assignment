@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import ImageDisplay from "../components/ImageDisplay";
+import Modal from "../components/Modal"
 
 
 const HomePage = () => {
@@ -20,7 +21,7 @@ const HomePage = () => {
         mollit anim id est laborum.</h3>
         <Link to="/about"><button className="button">About Page</button></Link>
     </div>
-
+    <Modal />
     </>
   );
 };
