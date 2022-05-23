@@ -6,6 +6,7 @@ const ContactPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [showInput, setShowInput] = useState([])
+  
 
 //Functions for the onChange to change the value
   const onNameChange = (event) => {
