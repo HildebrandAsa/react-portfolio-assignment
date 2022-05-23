@@ -1,13 +1,11 @@
-import { useState } from "react"
-
-const Modal = ({open, children}) => {
-
-  const [openModal, setOpenModal] = useState(false)
+//Props for the onClick and messages on the modal
+const Modal = ({clickHandler, message, closeMessage}) => {
 
   
   return (
-    <div>
-      <button onClick={open}>{children}</button>
+    <div className="modal">
+      <button onClick={clickHandler} className="close-button">{closeMessage}</button>
+      <h3>{message}</h3>
     </div>
   );
 };

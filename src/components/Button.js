@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import AboutPage from "../pages/AboutPage"
 
-const Button = (children) => {
+//Reusable button component
+const Button = (link, children) => {
   return (
-    <Link to="/about"><button className="button">{children}</button></Link>
+    <Link to={link}><button className="button">{children}</button></Link>
   )
 }
 

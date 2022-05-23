@@ -8,17 +8,14 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
+  //Routing to be able to link to diffrent pages
     <BrowserRouter>
-      <div>
         <Header />
-      </div>
-      <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" exact element={<AboutPage />} />
           <Route path="/contact" exact element={<ContactPage />} />
         </Routes>
-      </div>
       <Footer />
     </BrowserRouter>
   );

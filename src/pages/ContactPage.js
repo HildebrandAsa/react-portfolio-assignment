@@ -1,13 +1,13 @@
 import { useState } from "react"
 
 const ContactPage = () => {
-
+//the states to update the values
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [showInput, setShowInput] = useState([])
 
-
+//Functions for the onChange to change the value
   const onNameChange = (event) => {
     setName(event.target.value);
   }
@@ -18,12 +18,15 @@ const ContactPage = () => {
     setMessage(event.target.value);
   }
 
+  //Function for the submit button 
   const submitHandler = (e) => {
     e.preventDefault()
 
+    //Saving the new values in person
     const person = { name, email, message }
     setShowInput([...showInput, person])
   
+    //Clean the inputs
     setName("")
     setEmail("")
     setMessage("")
@@ -32,7 +35,7 @@ const ContactPage = () => {
   return (
     <>
       <form onSubmit={submitHandler} className="contact-form">
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">Namn:</label>
         <input
           className="input"
           name="name"
@@ -48,7 +51,7 @@ const ContactPage = () => {
           value={email}
           onChange={onEmailChange}
         />
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">Meddelande:</label>
         <textarea
           className="input-message"
           name="message"
@@ -56,14 +59,17 @@ const ContactPage = () => {
           value={message}
           onChange={onMessageChange}
         />
-        <button className="input-button" type="submit" value="Submit">Submit</button>
+        <button className="input-button" type="submit" value="Submit">Skicka</button>
       </form>
     
-      {showInput.map((person, i) => (
-        <div>
-        <h3>Name: {person.name}</h3>
-        <h3>Email: {person.email}</h3>
-        <h3>Message: {person.message}</h3>
+    {/* Mapping through the values */}
+      {showInput.map((person) => (
+        <div className="summary">
+          <div className="summary-div">
+            <h3>Name: {person.name}</h3>
+            <h3>Email: {person.email}</h3>
+            <h3>Message: {person.message}</h3>
+          </div>
         </div>
       ))}
     </>
