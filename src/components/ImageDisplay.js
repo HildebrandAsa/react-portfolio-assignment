@@ -10,7 +10,7 @@ const ImageDisplay = () => {
         felxDirection: "column"
       }}
       >
-      <img src={jag} alt="profile image" height={250} width={250}/>
+      <img src={jag} alt="profile" height={250} width={250}/>
     </div>
   )
 }

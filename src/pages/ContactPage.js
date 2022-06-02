@@ -64,9 +64,9 @@ const ContactPage = () => {
       </form>
     
     {/* Mapping through the values */}
-      {showInput.map((person) => (
+      {showInput.map((person, i) => (
         <div className="summary">
-          <div className="summary-div">
+          <div className="summary-div" key={i}>
             <h3>Name: {person.name}</h3>
             <h3>Email: {person.email}</h3>
             <h3>Message: {person.message}</h3>
