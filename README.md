@@ -1,3 +1,9 @@
+This was our first project with React at Sundsgårdens folkhögskola. We were supposed to build our own portfolio in React to practice how to
+- Routing in React, how to link to other pages.
+- Creating components and rendering components in React.
+- Using state and working with events in React.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
