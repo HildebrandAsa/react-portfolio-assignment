@@ -3,6 +3,10 @@ This was our first project with React at Sundsgårdens folkhögskola. We were su
 - Creating components and rendering components in React.
 - Using state and working with events in React.
 
+Here is the link to the live site:
+https://react-assignment2-portfolio.netlify.app/
+
+
 
 # Getting Started with Create React App
 
